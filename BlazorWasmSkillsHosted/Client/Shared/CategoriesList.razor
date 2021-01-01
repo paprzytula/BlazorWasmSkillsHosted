@@ -1,10 +1,7 @@
-﻿<input type="checkbox" @bind="displayButtons" />
-<GenericList List="Categories">
-    <ElementTemplate>
-<IndividualCategory Category="context" DisplayButtons="displayButtons" DeleteCategory="DeleteCategory" />
+﻿<GenericList List="Categories">
+    <ElementTemplate Context="category">
+<IndividualCategory Category="category"  DeleteCategory="DeleteCategory" />
     </ElementTemplate>
 </GenericList>
-<Confirmation @ref="confirmation" OnCancel="onCancel" OnConfirm="onConfirm">
-    <div>Do you really want to delete @CategoryToBeDeleted.CategoryName?</div>
-</Confirmation>
+
 

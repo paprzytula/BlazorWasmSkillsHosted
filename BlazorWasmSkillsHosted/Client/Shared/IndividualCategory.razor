@@ -1,13 +1,5 @@
-﻿<div>
-    <p><b>@Category.CategoryName</b></p>
-    @if (DisplayButtons)
-    {
-    <div>
-        <button class="btn btn-danger" @onclick="@(() => DeleteCategory.InvokeAsync(Category))">Delete</button>
-    </div>
-    <br />
-    }
-    <br />
+﻿<div class="individual-category-container">
+
 </div>
 
 @code {

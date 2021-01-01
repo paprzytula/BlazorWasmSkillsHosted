@@ -8,7 +8,7 @@ namespace BlazorWasmSkillsHosted.Client.Shared
 {
     public partial class MainLayout
     {
-        AppStyle appStyle = new AppStyle();
+        
     }
     
 }
