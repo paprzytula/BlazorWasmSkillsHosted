@@ -16,22 +16,25 @@ namespace BlazorWasmSkillsHosted.Client.Helpers
                     {
                         Id=2,
                         CategoryName="Shopfloor",
-
+                        Image= "https://www.mi-gb.com/wp-content/uploads/2012/04/CategoryManagementDiagram.png"
                     },
                     new Category()
                     {
                         Id=3,
-                        CategoryName="Programming"
+                        CategoryName="Programming",
+                        Image= "https://www.mi-gb.com/wp-content/uploads/2012/04/CategoryManagementDiagram.png"
                     },
                     new Category()
                     {
                         Id=4,
-                        CategoryName="Database"
+                        CategoryName="Database",
+                        Image= "https://www.mi-gb.com/wp-content/uploads/2012/04/CategoryManagementDiagram.png"
                     },
                     new Category()
                     {
                         Id=1,
-                        CategoryName="Administration"
+                        CategoryName="Administration",
+                        Image= "https://www.mi-gb.com/wp-content/uploads/2012/04/CategoryManagementDiagram.png"
                     }
 
                 };
