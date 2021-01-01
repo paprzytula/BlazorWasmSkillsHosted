@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace BlazorWasmSkillsHosted.Shared.Entities
 {
-    public class Category
+    public class Skill
     {
         public int Id { get; set; }
-        public string CategoryName { get; set; }
-        public List<Skill> Skill { get; set; }
+        public string SkillTitle { get; set; }
     }
 }

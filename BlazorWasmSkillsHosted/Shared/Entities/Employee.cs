@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlazorWasmSkillsHosted.Shared.Entities
 {
-    public class Category
+    public class Employee
     {
         public int Id { get; set; }
-        public string CategoryName { get; set; }
-        public List<Skill> Skill { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime EmploymentDate { get; set; }
     }
 }

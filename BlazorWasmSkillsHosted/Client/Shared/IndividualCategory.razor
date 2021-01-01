@@ -1,0 +1,18 @@
+﻿<div>
+    <p><b>@Category.CategoryName</b></p>
+    @if (DisplayButtons)
+    {
+    <div>
+        <button class="btn btn-danger" @onclick="@(() => DeleteCategory.InvokeAsync(Category))">Delete</button>
+    </div>
+    <br />
+    }
+    <br />
+</div>
+
+@code {
+    [Parameter] public Category Category { get; set; }
+    [Parameter] public bool DisplayButtons { get; set; } = false;
+    [Parameter] public EventCallback<Category> DeleteCategory { get; set; }
+
+}

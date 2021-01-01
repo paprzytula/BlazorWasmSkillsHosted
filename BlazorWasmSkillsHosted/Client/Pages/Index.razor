@@ -1,4 +1,11 @@
 ﻿@page "/"
 
 
-<button @onclick="@(() => Console.WriteLine("I'm clicked ;)"))">Click Me!</button>
+<div>
+<h3 style="color:@AppStyle.MainTextColor">Category</h3>
+<CategoriesList Categories="categories" />
+</div>
+<button @onclick="AddNewCategory">Add new Category</button>
+
+
+

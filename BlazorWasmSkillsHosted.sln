@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSkillsHosted.Server", "BlazorWasmSkillsHosted\Server\BlazorWasmSkillsHosted.Server.csproj", "{0759B790-B969-4C67-AA84-BFFD15893AAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSkillsHosted.Server", "BlazorWasmSkillsHosted\Server\BlazorWasmSkillsHosted.Server.csproj", "{0759B790-B969-4C67-AA84-BFFD15893AAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSkillsHosted.Client", "BlazorWasmSkillsHosted\Client\BlazorWasmSkillsHosted.Client.csproj", "{D7C19FF5-DB36-4766-832B-CCBD16426828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSkillsHosted.Client", "BlazorWasmSkillsHosted\Client\BlazorWasmSkillsHosted.Client.csproj", "{D7C19FF5-DB36-4766-832B-CCBD16426828}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmSkillsHosted.Shared", "BlazorWasmSkillsHosted\Shared\BlazorWasmSkillsHosted.Shared.csproj", "{7D7717C3-83B8-446F-8C8B-C09CA03B32E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWasmSkillsHosted.Shared", "BlazorWasmSkillsHosted\Shared\BlazorWasmSkillsHosted.Shared.csproj", "{7D7717C3-83B8-446F-8C8B-C09CA03B32E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
