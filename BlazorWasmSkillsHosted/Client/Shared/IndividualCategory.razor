@@ -1,17 +1,11 @@
 ﻿<div class="individual-category-container">
-    <a>
+    <a href="@categoryUrl">
         <img src="@Category.Image" alt="@Category.CategoryName" class="category-image" />
     </a>
-    <p>@Category.CategoryName</p>
+    <p><a href="@categoryUrl">@Category.CategoryName</a></p>
     <div>
         <a class="btn btn-info">Edit</a>
         <button type="button" class="btn btn-danger" @onclick="@(()=>DeleteCategory.InvokeAsync(Category))">Delete</button>
     </div>
 </div>
 
-@code {
-    [Parameter] public Category Category { get; set; }
-    [Parameter] public bool DisplayButtons { get; set; } = false;
-    [Parameter] public EventCallback<Category> DeleteCategory { get; set; }
-
-}
