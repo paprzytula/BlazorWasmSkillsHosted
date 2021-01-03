@@ -1,0 +1,8 @@
+﻿@page "/skills/edit/{SkillId:int}"
+@page "/skills/edit/{SkillId:int}/{SkillName}"
+<h3>Edit Competence</h3>
+@if (skill !=null)
+{
+
+<SkillForm Skill="skill" OnValidSubmit="Edit"/>
+}

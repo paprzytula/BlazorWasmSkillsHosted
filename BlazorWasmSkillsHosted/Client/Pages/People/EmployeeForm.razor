@@ -1,0 +1,33 @@
+﻿<EditForm Model="Employee" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Employee.FirstName"></InputText>
+            <ValidationMessage For="@(()=> Employee.FirstName)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Employee.LastName"></InputText>
+            <ValidationMessage For="@(()=> Employee.LastName)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="LastName">Date Of Birth</label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@Employee.DateOfBirth"></InputDate>
+            <ValidationMessage For="@(()=> Employee.DateOfBirth)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <InputImg Label="Picture" OnSelectedImage="OnSelectedImage" ImageUrl="@ImageUrl"/>
+    </div>
+    <div class="form-group">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+

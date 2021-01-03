@@ -1,6 +1,7 @@
-﻿@page "/person/edit"
+﻿@page "/person/edit/{EmployeeId:int}"
 <h3>EditEmployee</h3>
-
-@code {
+@if (Employee!=null)
+{
+<EmployeeForm Employee="Employee" OnValidSubmit="Edit"/>
 
 }

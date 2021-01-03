@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using BlazorWasmSkillsHosted.Shared.Entities;
+using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,13 @@ namespace BlazorWasmSkillsHosted.Client.Pages.People
     public partial class EditEmployee
     {
         [Parameter] public int EmployeeId { get; set; }
-        [Parameter] public string FirstName { get; set; }
-        [Parameter] public string LastName { get; set; }
+        Employee Employee = new Employee() { FirstName = "Jan", LastName = "Nowak", DateOfBirth = DateTime.Parse("1980-01-01"), DepartmentId=1, Id=1 };
+
+        private void Edit()
+        {
+
+            Console.WriteLine("Editing the Employee...");
+        }
+
     }
 }

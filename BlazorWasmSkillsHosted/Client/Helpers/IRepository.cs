@@ -9,5 +9,8 @@ namespace BlazorWasmSkillsHosted.Client.Helpers
     public interface IRepository
     {
         List<Category> GetCategories();
+        List<Department> GetDepartments();
+        List<Employee> GetEmployees();
+        List<Skill> GetSkills();
     }
 }

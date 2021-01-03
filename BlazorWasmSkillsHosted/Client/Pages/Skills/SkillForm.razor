@@ -1,0 +1,22 @@
+﻿
+<EditForm Model="Skill" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Category:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Skill.SkillCategory" />
+            <ValidationMessage For="@(()=>Skill.SkillCategory)" />
+        </div>
+        <label>Title:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Skill.SkillName" />
+            <ValidationMessage For="@(()=>Skill.SkillName)" />
+        </div>
+        <label>Description:</label>
+        <div>
+            <InputTextArea class="form-control" @bind-Value="@Skill.SkillDescription" />
+            <ValidationMessage For="@(()=>Skill.SkillDescription)" />
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Save Changes</button>
+</EditForm>

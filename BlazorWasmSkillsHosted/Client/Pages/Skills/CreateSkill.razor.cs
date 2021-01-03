@@ -4,16 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BlazorWasmSkillsHosted.Client.Pages.People
+namespace BlazorWasmSkillsHosted.Client.Pages.Skills
 {
-    public partial class CreateEmployee
+    public partial class CreateSkill
     {
-        Employee Employee = new Employee();
-
+        Skill skill = new Skill();
         private void Create()
         {
-
-            Console.WriteLine("Creating Employee...");
+            Console.WriteLine(skill.SkillName);
         }
     }
 }
